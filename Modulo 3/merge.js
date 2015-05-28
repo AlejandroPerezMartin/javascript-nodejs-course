@@ -1,6 +1,6 @@
 /**
  * @author Alejandro Perez Martin
- * @url http://linkedin.com/aleperez92
+ * @url https://www.linkedin.com/in/aleperez92
 * */
 
 var fs = require('fs');
@@ -32,7 +32,7 @@ for (var i = 3, len = process.argv.length; i < len; i++) {
             console.log("Couldn't read the source file");
             return;
         }
-  		
+
         /* Append content from source file to destination file */
         fs.appendFile(destinationFile, data, function (err) {
             if (err) console.log("Couldn't append to destination file");
