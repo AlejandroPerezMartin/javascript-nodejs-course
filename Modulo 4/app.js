@@ -30,6 +30,10 @@ app.get('/respuestas', function (req, res) {
 
 });
 
+app.get('*', function(req, res) {
+      res.redirect('/preguntas');
+});
+
 app.listen(port, function () {
     console.log("Servidor ejecutado en: http://localhost:" + port);
 });
